@@ -10,7 +10,6 @@ from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 wCam, hCam = 640, 480
 ############################
 
-
 cap = cv2.VideoCapture(0)
 cap.set(3, wCam)
 cap.set(4, hCam)
@@ -25,7 +24,7 @@ interface = devices.Activate(
 volume = interface.QueryInterface(IAudioEndpointVolume)
 volRange = volume.GetVolumeRange()
 
-# Default Values    
+# Default Values
 minVol = volRange[0]
 maxVol = volRange[1]
 vol = 0
