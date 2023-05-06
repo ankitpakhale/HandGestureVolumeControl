@@ -51,6 +51,7 @@ This code is designed to provide a basic example of hand gesture volume control.
 ## Known Issues
 
 - The code assumes a single hand in the frame and may not work correctly with multiple hands.
+- The hand distance should be in the middle of the camera view, not too close to the camera or too far from the camera, for optimal volume control accuracy.
 
 ## License
 
