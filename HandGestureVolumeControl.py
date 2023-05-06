@@ -7,7 +7,7 @@ import HandTrackingModule as htm
 from pycaw.pycaw import AudioUtilities, IAudioEndpointVolume
 
 ############################
-wCam, hCam = 640, 480
+wCam, hCam = 1280, 720
 ############################
 
 cap = cv2.VideoCapture(0)
@@ -109,3 +109,7 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
+
+# Project Summery
+# The code uses OpenCV, NumPy, and PyCaw libraries to detect hand gestures and control system volume. It uses hand tracking module to track hand landmarks and calculates volume level based on the distance between thumb tip and index finger tip, and displays a real-time graphical interface, including a volume bar and the current volume percentage.
